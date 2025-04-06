@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>3D Horoscope Web App with Kundali</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>🔮 Horoscope & Kundali Checker</h1>
+    <label for="dob">Enter your Date of Birth:</label>
+    <input type="date" id="dob" />
+
+    <label for="birthTime">Time of Birth:</label>
+    <input type="time" id="birthTime" />
+
+    <label for="birthPlace">Place of Birth:</label>
+    <input type="text" id="birthPlace" placeholder="e.g., Delhi, India" />
+
+    <label for="partnerDob">Partner's Date of Birth:</label>
+    <input type="date" id="partnerDob" />
+
+    <button onclick="showHoroscope()">Check Horoscope</button>
+    <button onclick="downloadPDF()">Download Report as PDF</button>
+    <div class="result" id="result"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
